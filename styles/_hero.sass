@@ -1,0 +1,39 @@
+$size: 600px
+$ratio: 100%
+
+.hero
+  background-color: $accent
+  color: #fff
+
+  &__info
+    z-index: 999
+    position: relative
+    @extend %columnJustCenter
+    gap: 50px
+    max-width: 310px
+
+  &__title
+    font-weight: 700
+    font-size: 48px
+
+  &__description
+    line-height: 1.5
+
+  &__image
+    @extend %absoluteCenter
+    left: 75%
+    width: 856px
+    height: $size
+    overflow: hidden
+
+    & > img
+      width: $ratio
+      height: $ratio
+      object-fit: cover
+      object-position: center 45%
+
+@media screen and ( max-width: 1024px )
+  .hero
+    &__image
+      width: $size
+      height: calc( $size / 1.5 )

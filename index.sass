@@ -1,0 +1,57 @@
+@import ./styles/_reset
+
+$gray: #EFEFEF
+$accent: #66C05D
+$dark: #333333
+$dark-half: #3333336e
+
+// Reuse
+%absoluteCenter
+  position: absolute
+  left: 50%
+  top: 50%
+  translate: -50% -50%
+
+%rowCC
+  display: flex
+  justify-content: center
+  align-items: center
+
+%rowSpaceC
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+%columnJustCenter
+  display: flex
+  flex-direction: column
+  justify-content: center
+
+%fontBody
+  font: 400 14px/1.15 'Roboto', sans-serif
+
+%shadow
+  filter: drop-shadow(0 0 3px $dark-half)
+
+=background($imgpath, $position: center, $repeat: no-repeat)
+  background:
+    image: url($imgpath)
+    position: $position
+    repeat: $repeat
+
+body
+  @extend %fontBody
+  background-color: $gray
+  color: #000
+
+@import ./styles/_container
+@import ./styles/_bg
+@import ./styles/_button
+@import ./styles/_input
+@import ./styles/_navigation
+@import ./styles/_logo
+@import ./styles/_contacts
+@import ./styles/_hero
+@import ./styles/_special
+@import ./styles/_card
+@import ./styles/_promo

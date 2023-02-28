@@ -1,0 +1,27 @@
+.container
+  max-width: 1110px
+  margin: 0 auto
+  min-height: 20px
+
+  &_pos_contacts
+    padding-top: 20px
+    padding-bottom: 20px
+    @extend %rowSpaceC
+
+  &_pos_hero
+    @extend %rowSpaceC
+    position: relative
+    height: 600px
+  
+  &_pos_promo
+    display: grid
+    grid-template-columns: repeat(2, 1fr)
+    gap: 30px
+
+@media screen and ( max-width: 1200px )
+  .container
+    margin: 0 40px
+
+@media screen and ( max-width: 1024px )
+  .container_pos_hero
+    height: 400px

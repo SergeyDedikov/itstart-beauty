@@ -1,0 +1,25 @@
+$color: #fff
+$margin: calc(100% - 45px)
+
+.promo
+  @extend %columnJustCenter
+  justify-content: space-between
+  gap: 25px
+  background-color: $accent
+  padding: 35px 40% 35px 40px
+
+  &_type_subscribe
+    +background('../images/icon_envelope.svg', $margin 50%)
+
+  &_type_delivery
+    padding-right: 60%
+    +background('../images/icon_furgon.svg', $margin 50%)
+
+  &__title
+    font-weight: 700
+    font-size: 18px
+    color: $color
+
+  &__description
+    line-height: 20px
+    color: $color

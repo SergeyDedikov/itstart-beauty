@@ -1,0 +1,17 @@
+$size: 20px
+
+.special
+  padding: calc( $size * 4 ) 0
+
+  &__title
+    font-weight: 700
+    font-size: 24px
+    padding-bottom: $size
+
+  &__cards
+    padding: $size 0
+    width: 100%
+    display: grid
+    grid-template-columns: repeat(auto-fill, minmax(240px, 255px))
+    justify-content: center
+    gap: 30px

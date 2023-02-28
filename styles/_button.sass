@@ -1,0 +1,37 @@
+.button
+  @extend %fontBody
+  width: 170px
+  height: 40px
+  padding: 5px 10px
+  border-radius: 40px
+  border: 2px solid transparent
+  text-align: center
+  transition: all 0.3s
+
+  &:hover
+    @extend %shadow
+    transition: all 0.3s
+
+  &:active
+    transform: scale(0.98) translateY(2px)
+    filter: drop-shadow(0 0 1px $dark-half)
+
+  &_type_primary
+    letter-spacing: 0.05em
+    border-color: #fff
+    color: #fff
+    background-color: $accent
+
+  &_type_secondary
+    border-color: $accent
+    color: #000
+    background-color: #fff
+
+  &_pos_card
+    width: 130px
+    height: 35px
+    border: none
+  
+  &_pos_promo
+    height: 35px
+
