@@ -234,6 +234,13 @@ body {
   color: #66C05D;
 }
 
+#logoBeauty .group-1 {
+  fill: #EFEFEF;
+}
+#logoBeauty .group-2 {
+  fill: #66C05D;
+}
+
 .contacts {
   justify-content: flex-end;
   gap: 40px;
