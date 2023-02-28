@@ -6,16 +6,19 @@
   &_pos_contacts
     padding-top: 20px
     padding-bottom: 20px
-    @extend %rowSpaceC
+    display: grid
+    // grid-template-columns: 30% 70%
+    grid: auto-flow dense / 1fr 30% 1fr
+    align-items: center
+    gap: 20px
 
   &_pos_hero
     @extend %rowSpaceC
     position: relative
     height: 600px
-  
+
   &_pos_promo
     display: grid
-    // grid-template-columns: repeat(2, 1fr)
     grid-template-columns: repeat(auto-fill, minmax(460px, 1fr))
     gap: 30px
     padding-bottom: 130px

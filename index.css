@@ -98,7 +98,7 @@ h6 {
   align-items: center;
 }
 
-.container_pos_hero, .container_pos_contacts {
+.container_pos_hero {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -131,6 +131,10 @@ body {
 .container_pos_contacts {
   padding-top: 20px;
   padding-bottom: 20px;
+  display: grid;
+  grid: auto-flow dense/1fr 30% 1fr;
+  align-items: center;
+  gap: 20px;
 }
 .container_pos_hero {
   position: relative;
@@ -224,6 +228,7 @@ body {
 }
 
 .logo {
+  min-width: 260px;
   display: flex;
   align-items: center;
   gap: 20px;
@@ -235,6 +240,10 @@ body {
   color: #66C05D;
 }
 
+#logoBeauty {
+  width: 80px;
+  height: 80px;
+}
 #logoBeauty .group-1 {
   fill: #EFEFEF;
 }
@@ -244,7 +253,14 @@ body {
 
 .contacts {
   justify-content: flex-end;
-  gap: 40px;
+  justify-self: flex-end;
+  flex-wrap: wrap;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
+  row-gap: 20px;
+}
+.contacts__item {
+  text-align: center;
 }
 
 .hero {
@@ -353,4 +369,10 @@ body {
 .promo__description {
   line-height: 20px;
   color: #fff;
+}
+
+.soclinks {
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }/*# sourceMappingURL=index.css.map */
