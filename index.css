@@ -392,13 +392,21 @@ body {
   border-radius: 25px;
   background-color: #FFF;
   border: 2px solid #66C05D;
+  overflow: hidden;
+  transition: all 0.2s;
 }
 .icon svg .cls-1 {
   fill: #66C05D;
 }
 .icon:hover {
-  border-color: #4eaa60;
+  border-color: #5da655;
+  transition: all 0.2s;
+}
+.icon:hover > svg {
+  transform: scale(1.1);
+  transition: all 0.2s;
 }
 .icon:hover > svg .cls-1 {
-  fill: #4eaa60;
+  fill: #5da655;
+  transition: all 0.2s;
 }/*# sourceMappingURL=index.css.map */

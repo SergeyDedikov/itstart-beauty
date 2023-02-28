@@ -5,6 +5,8 @@
   border-radius: 25px
   background-color: #FFF
   border: 2px solid $accent
+  overflow: hidden
+  transition: all 0.2s
 
   & svg .cls-1
     fill: $accent
@@ -12,5 +14,12 @@
   &:hover
     border-color: $accent-dark
     @extend %shadow
-    & > svg .cls-1
-      fill: $accent-dark
+    transition: all 0.2s
+
+    & > svg
+      transform: scale(1.1)
+      transition: all 0.2s
+      
+      & .cls-1
+        fill: $accent-dark
+        transition: all 0.2s
