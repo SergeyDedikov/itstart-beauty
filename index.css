@@ -395,4 +395,10 @@ body {
 }
 .icon svg .cls-1 {
   fill: #66C05D;
+}
+.icon:hover {
+  border-color: #4eaa60;
+}
+.icon:hover > svg .cls-1 {
+  fill: #4eaa60;
 }/*# sourceMappingURL=index.css.map */
