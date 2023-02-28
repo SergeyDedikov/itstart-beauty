@@ -92,7 +92,7 @@ h6 {
   translate: -50% -50%;
 }
 
-.icon, .contacts, .navigation {
+.copyright, .icon, .contacts, .navigation {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -416,4 +416,21 @@ body {
 .icon:hover > svg .cls-1 {
   fill: #5da655;
   transition: all 0.2s;
+}
+
+.copyright {
+  justify-content: space-between;
+  padding: 25px 0;
+  -moz-column-gap: 60px;
+       column-gap: 60px;
+}
+.copyright * {
+  font-size: 12px;
+  color: #828282;
+}
+.copyright a {
+  text-align: right;
+}
+.copyright a:hover {
+  color: #333333;
 }/*# sourceMappingURL=index.css.map */
