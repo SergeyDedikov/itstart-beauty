@@ -1,2 +1,13 @@
 .icon
-  color: #aaa
+  @extend %rowCC
+  width: 45px
+  aspect-ratio: 1
+  border-radius: 25px
+  background-color: #FFF
+  border: 2px solid $accent
+
+  & svg .cls-1
+    fill: $accent
+
+  &:hover
+    @extend %shadow
