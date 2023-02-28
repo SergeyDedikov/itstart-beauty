@@ -1,13 +1,10 @@
-$size: 600px
-$ratio: 100%
-
 .hero
+  height: 600px
   background-color: $accent
+  +background('../images/img_main.png', 85% 45%)
   color: #fff
 
   &__info
-    z-index: 999
-    position: relative
     @extend %columnJustCenter
     gap: 50px
     max-width: 310px
@@ -19,21 +16,34 @@ $ratio: 100%
   &__description
     line-height: 1.5
 
-  &__image
-    @extend %absoluteCenter
-    left: 75%
-    width: 856px
-    height: $size
-    overflow: hidden
-
-    & > img
-      width: $ratio
-      height: $ratio
-      object-fit: cover
-      object-position: center 45%
-
 @media screen and ( max-width: 1024px )
   .hero
-    &__image
-      width: $size
-      height: calc( $size / 1.5 )
+    height: 400px
+    background-size: 600px
+    background-position-x: 100%
+
+@media screen and ( max-width: 768px )
+  .hero
+    height: 300px
+    background-size: 450px
+
+@media screen and ( max-width: 720px )
+  .hero
+    height: auto
+    background-position: center 15%
+
+    &__info
+      max-width: 100%
+      gap: 30px
+      align-items: center
+      padding: 550px 0 50px
+
+    &__title, &__description
+      text-align: center
+
+    &__description
+      width: 50%
+
+@media screen and ( max-width: 420px )
+  .hero__title
+    font-size: 36px
