@@ -508,13 +508,13 @@ body {
   padding: 35px 40% 35px 40px;
 }
 .promo_type_subscribe {
-  background-image: url("../images/icon_envelope.svg");
+  background-image: url("./images/icon_envelope.svg");
   background-position: calc(100% - 45px) 50%;
   background-repeat: no-repeat;
 }
 .promo_type_delivery {
   padding-right: 60%;
-  background-image: url("../images/icon_furgon.svg");
+  background-image: url("./images/icon_furgon.svg");
   background-position: calc(100% - 45px) 50%;
   background-repeat: no-repeat;
 }
