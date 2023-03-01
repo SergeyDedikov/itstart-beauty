@@ -149,6 +149,9 @@ body {
     align-items: center;
     justify-content: flex-start;
   }
+  .container_pos_promo {
+    grid: auto-flow/1fr;
+  }
 }
 .bg {
   background-color: #fff;
@@ -468,6 +471,11 @@ body {
   gap: 30px;
 }
 
+@media screen and (max-width: 1200px) {
+  .special__title {
+    text-align: center;
+  }
+}
 .card {
   background-color: #fff;
   width: 100%;
@@ -495,7 +503,6 @@ body {
 }
 
 .promo {
-  justify-content: space-between;
   gap: 25px;
   background-color: #66C05D;
   padding: 35px 40% 35px 40px;
@@ -521,6 +528,18 @@ body {
   color: #fff;
 }
 
+@media screen and (max-width: 600px) {
+  .promo {
+    padding: 40px;
+    padding-bottom: 120px;
+    align-items: center;
+    background-position: 50% 85%;
+    background-size: 60px;
+  }
+  .promo__title, .promo__description {
+    text-align: center;
+  }
+}
 .soclinks {
   display: flex;
   align-items: center;

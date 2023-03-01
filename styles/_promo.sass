@@ -3,7 +3,6 @@ $margin: calc(100% - 45px)
 
 .promo
   @extend %columnJustCenter
-  justify-content: space-between
   gap: 25px
   background-color: $accent
   padding: 35px 40% 35px 40px
@@ -23,3 +22,14 @@ $margin: calc(100% - 45px)
   &__description
     line-height: 20px
     color: $color
+
+@media screen and ( max-width: 600px )
+  .promo
+    padding: 40px
+    padding-bottom: 120px
+    align-items: center
+    background-position: 50% 85%
+    background-size: 60px
+
+  .promo__title, .promo__description
+    text-align: center
