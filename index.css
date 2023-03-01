@@ -401,7 +401,7 @@ body {
 .hero {
   height: 600px;
   background-color: #66C05D;
-  background-image: url("../images/img_main.png");
+  background-image: url("./images/img_main.png");
   background-position: 85% 45%;
   background-repeat: no-repeat;
   color: #fff;
