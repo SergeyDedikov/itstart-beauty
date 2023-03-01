@@ -2,11 +2,13 @@
   @extend %rowCC
   justify-content: flex-end
   justify-self: flex-end
-  flex-wrap: wrap
+  flex-wrap: wrap-reverse
   column-gap: 40px
-  row-gap: 20px
+  row-gap: 10px
+  width: max-content
 
   &_align_center
+    width: auto
     justify-content: center
     justify-self: center
 
@@ -15,3 +17,18 @@
 
     &_size_medium
       font-size: 16px
+
+@media screen and ( max-width: 1024px )
+  .contacts:not(.contacts_align_center)
+    width: min-content
+    justify-content: center
+
+@media screen and ( max-width: 768px )
+  .contacts:not(.contacts_align_center)
+    justify-self: center
+    grid-column: 1 / 4
+    grid-row: 2 / 3
+  
+  .contacts_align_center
+    grid-column: 1 / 4
+    grid-row: 3 / 4

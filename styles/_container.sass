@@ -1,15 +1,17 @@
+$size: 20px
+
 .container
   max-width: 1110px
   margin: 0 auto
-  min-height: 20px
+  min-height: $size
 
   &_pos_contacts
-    padding-top: 20px
-    padding-bottom: 20px
+    padding-top: $size
+    padding-bottom: $size
     display: grid
     grid: auto-flow dense / 1fr 30% 1fr
     align-items: center
-    gap: 20px
+    gap: $size * 1.5
 
   &_pos_hero
     height: 100%
@@ -18,12 +20,18 @@
   &_pos_promo
     display: grid
     grid-template-columns: repeat(auto-fill, minmax(460px, 1fr))
-    gap: 30px
+    gap: $size * 1.5
     padding-bottom: 130px
 
 @media screen and ( max-width: 1200px )
   .container
-    margin: 0 40px
+    margin: 0 calc( $size * 2 )
+
+@media screen and ( max-width: 768px )
+  .container_pos_contacts > div, .container_pos_contacts > nav
+    justify-self: center
+    grid-column: 1 / 4
+  
 
 @media screen and ( max-width: 720px )
   .container_pos_hero
